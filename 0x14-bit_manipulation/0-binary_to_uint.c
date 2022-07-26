@@ -1,6 +1,22 @@
-#include <math.h>
 #include <stdlib.h>
 #include "main.h"
+
+/**
+ * _pow - cal power
+ * @b: base number
+ * @e: power
+ *
+ * Return: Power of the base
+*/
+double _pow(double b, int e)
+{
+	double p = 1;
+
+	while (e--)
+		p *= b;
+
+	return (p);
+}
 
 /**
 * binary_to_uint - converts binary to int
@@ -28,7 +44,7 @@ unsigned int binary_to_uint(const char *b)
 
 	while (*(b + i) != '\0')
 	{
-		sum += (*(b + i) - '0') * pow(2, p);
+		sum += (*(b + i) - '0') * _pow(2, p);
 		p--;
 		i++;
 	}
