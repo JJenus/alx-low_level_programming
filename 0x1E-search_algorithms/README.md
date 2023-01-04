@@ -1,7 +1,7 @@
 0x1E. C - Search Algorithms
 ===========================
 
--   By Wilfried Hennuyer
+-
 
 #### In a nutshell...
 
